@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500&family=Fraunces:wght@700;900&display=swap"
+    rel="stylesheet">
+
+  <title>Frontend Mentor | Sunnyside agency landing page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    body{
+      overflow-x: hidden;
+    }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    .header {
+      background-image: url("images/desktop/image-header.jpg");
+      height: 700px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+    }
+
+    .fontA {
+      font-family: 'Barlow', sans-serif;
+    }
+
+    .fontB-Bold {
+      font-family: 'Fraunces', serif;
+      font-weight: 900;
+    }
+
+    .fontB-thin {
+      font-family: 'Fraunces', serif;
+      font-weight: 700;
+    }
+
+    .creatives {
+      letter-spacing: 5px;
+      font-size: 4rem;
+      position: relative;
+      top: 4rem;
+    }
+
+    .arrow {
+      position: relative;
+      top: 9rem;
+      left: 50%;
+      right: 50%;
+    }
+
+    .text-middle {
+      position: relative;
+      top: 50%;
+      bottom: 50%
+    }
+
+    .image-text {
+      position: relative;
+      top: -13rem;
+      z-index: 2;
+    }
+
+    .user-profile {
+      border-radius: 50%;
+    }
+
+    .sea-green {
+      color: hsl(167, 40%, 24%);
+    }
+
+    .dark-desaturated-blue{
+      color: hsl(212, 27%, 19%);
+    }
+
+    .very-dark-grayish-blue{
+      color: hsl(213, 9%, 39%);
+    }
+
+    .dark-grayish-blue{
+      color:  hsl(232, 10%, 55%);
+    }
+
+    .grayish-blue{
+      color: hsl(210, 4%, 67%);
+    }
+
+    .review-text{
+      line-height: 35px;
+      letter-spacing: 1px;
+      font-size: 1.3rem;
+    }
+
+    .image-text{
+      line-height: 30px;
+      letter-spacing: .65px;
+    }
+
+    .highlight-effect{
+      background-color: #ffffbb;
+      border-radius: 10px;
+      width: 8rem;
+      height: .75rem;
+      margin-left: -.35rem;
+      margin-top: -.6rem;
+    }
+    
+  </style>
+</head>
+
+<body>
+  <div class="header">
+
+    <nav class="d-flex align-items-center justify-content-between w-100 px-5 py-4">
+      <div>
+        <img style="width: 12rem;" src="images/logo.svg" alt="the word sunnyside in white block letters">
+      </div>
+      <div style="font-size: 1.2rem">
+        <a class="px-4 text-white fontA">About</a>
+        <a class="px-4 text-white fontA">Services</a>
+        <a class="px-4 text-white fontA">Projects</a>
+        <a class="px-4 bg-white text-black fontB-thin text-uppercase"
+          style="border-radius: 35px; padding-top: .75rem; padding-bottom: .75rem;">
+          Contact
+        </a>
+      </div>
+    </nav>
+    <h1 class="fontB-Bold text-white text-center creatives">We are creatives</h1>
+    <img class="arrow" src="images/icon-arrow-down.svg" alt="white arrow down">
+  </div>
+  <div class="row">
+    <div class="col-6">
+      <div class="text-left mr-auto ml-auto" style="width: 65%; position: relative; top: 31%;">
+        <h2 class="fontB-Bold mb-4" style="font-size: 3.25rem">Transform your brand</h2>
+        <p class="fontA dark-grayish-blue mb-5" style="font-size: 1.15rem">We are a full-service creative agency specializing in helping brands grow fast.
+          Engage your clients through compelling visuals that do most of the marketing for you.
+        </p>
+        <a class="fontB-thin text-uppercase">Learn more</a>
+        <div class="highlight-effect"></div>
+      </div>
+    </div>
+    <div class="col-6 pl-0">
+      <img class="w-100" src="images/desktop/image-transform.jpg" alt="yellow background with an egg">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-6 pr-0">
+      <img class="w-100" src="images/desktop/image-stand-out.jpg" alt="yellow background with an egg">
+    </div>
+    <div class="col-6">
+      <div class="text-left mr-auto ml-auto" style="width: 65%; position: relative; top: 31%;">
+        <h2 class="fontB-Bold mb-4" style="font-size: 3.25rem">Stand out to the right audience</h2>
+        <p class="fontA dark-grayish-blue mb-5" style="font-size: 1.15rem"> Using a collaborative formula of designers, researchers, photographers, videographers, and
+          copywriters, we’ll build and extend your brand in digital places.
+        </p>
+        <a class="fontB-thin text-uppercase">Learn more</a>
+        <div class="highlight-effect"></div>
+      </div>
+    </div>
+    <div class="row w-100">
+      <div class="col-6 pr-0">
+        <img style="width: 102%; height: 80.8%" src="images/desktop/image-graphic-design.jpg"
+          alt="yellow background with an egg">
+        <div class="text-center image-text w-50 ml-auto mr-auto">
+          <h3 class="fontB-thin" style="font-size: 3.25rem; color: hsl(167, 40%, 24%)">Graphic design</h3>
+          <p class="fontA" style="font-size: 1.15rem; color: hsl(167, 40%, 24%)">Great design makes you memorable. We deliver artwork that underscores your brand message and captures
+            potential clients’ attention. </p>
+        </div>
+      </div>
+      <div class="col-6 pr-0">
+        <img style="width: 100%" src="images/desktop/image-photography.jpg" alt="yellow background with an egg">
+        <div class="text-center image-text w-50 ml-auto mr-auto">
+          <h3 class="fontB-thin" style="font-size: 3.25rem; color: hsl(198, 62%, 26%)">Photography</h3>
+          <p class="fontA" style="font-size: 1.15rem; color: hsl(198, 62%, 26%)">Increase your credibility by getting the most stunning, high-quality photos that improve your business
+            image. </p>
+        </div>
+      </div>
+    </div>
+    <div style="margin-top: 0rem; margin-bottom: 7rem">
+      <h3 class="text-center fontB-thin text-uppercase"
+        style="margin-bottom: 5rem; letter-spacing: 5px; color: hsl(210, 4%, 67%)">Client Testimonials</h3>
+      <div class="row w-100" style="padding-left: 7rem; padding-right: 7rem">
+        <div class="col-4 text-center">
+          <img class="user-profile w-25" src="images/image-emily.jpg" alt="">
+          <p class="mt-5 fontA very-dark-grayish-blue review-text"> We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always
+            hit.</p>
+          <p class="mt-5 mb-0 fontB-Bold" style="font-size: 1.2rem">Emily R.</p>
+          <p class="fontA grayish-blue">Marketing Director</p>
+        </div>
+        <div class="col-4 text-center">
+          <img class="user-profile w-25" src="images/image-thomas.jpg" alt="">
+          <p class="mt-5 fontA very-dark-grayish-blue review-text"> Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and
+            enjoyable experience.</p>
+          <p class="mt-5 mb-0 fontB-Bold" style="font-size: 1.2rem">Thomas S.</p>
+          <p class="fontA grayish-blue">Chief Operating Officer</p>
+        </div>
+        <div class="col-4 text-center">
+          <img class="user-profile w-25" src="images/image-jennie.jpg" alt="">
+          <p class="mt-5 fontA very-dark-grayish-blue review-text">Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
+          </p>
+          <p class="mt-5 mb-0 fontB-Bold" style="font-size: 1.2rem">Jennie F.</p>
+          <p class="fontA grayish-blue">Business Owner</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-3 pr-0">
+        <img class="w-100 h-100" src="images/desktop/image-gallery-milkbottles.jpg" alt="">
+      </div>
+      <div class="col-3 px-0">
+        <img class="w-100" src="images/desktop/image-gallery-orange.jpg" alt="">
+      </div>
+      <div class="col-3 px-0">
+        <img class="w-100" src="images/desktop/image-gallery-cone.jpg" alt="">
+      </div>
+      <div class="col-3 pl-0">
+        <img class="w-100 h-100" src="images/desktop/image-gallery-sugarcubes.jpg" alt="">
+      </div>
+    </div>
+    <div class="w-100 text-center pt-5" style="background-color:hsl(168 46% 69%)">
+      <img src="images/logo.svg" style="width: 12rem; margin-bottom: .75rem;" alt="" class="sea-green">
+      <div class="d-flex align-items-center fontA justify-content-center w-100 mt-4 mb-5 sea-green">
+        <a class="mx-5 fontA" style="font-size: 1.25rem">About</a>
+        <a class="ml-4 mr-5 fontA" style="font-size: 1.25rem">Services</a>
+        <a class="ml-4 mr-5 fontA" style="font-size: 1.25rem">Projects</a>
+      </div>
+      <div class="d-flex align-items-center justify-content-center w-100 my-5 pt-4 sea-green">
+        <img class="mr-3" style="width: 1.45rem" src="images/icon-facebook.svg" alt="facebook">
+        <img class="mr-3" style="width: 1.45rem" src="images/icon-instagram.svg" alt="instagram">
+        <img class="mr-3" style="width: 1.45rem" src="images/icon-twitter.svg" alt="twitter">
+        <img style="width: 1.45rem" src="images/icon-pinterest.svg" alt="pintrest">
+      </div>
+      <div class="attribution mb-4">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="#">Shanda Pinell</a>.
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
